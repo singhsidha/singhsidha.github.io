@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Siddharth Chetan – Executive CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: dark executive hero, light content, left-rail timeline, badge wall. */
+:root{--ink:#0F1E2E;--ink2:#1B3148;--paper:#F6F8FA;--card:#FFFFFF;--line:#DCE4EA;--mut:#5A6B7A;--teal:#1F8A8A;--teal2:#D9EFEF;--gold:#B8893A;--gold2:#F6EAD0;--hl:#FFF3C4;
+--disp:"Fraunces",Georgia,serif;--body:"Manrope","Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.55;font-size:15px}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:20;background:rgba(15,30,46,.96);backdrop-filter:blur(6px)}
+nav .wrap{display:flex;align-items:center;gap:6px;height:54px;overflow-x:auto}
+nav b{color:#fff;font-family:var(--disp);margin-right:auto;white-space:nowrap;font-size:16px}
+nav a{color:#B9C8D6;text-decoration:none;font-size:13px;font-weight:600;padding:7px 11px;border-radius:8px;white-space:nowrap}
+nav a:hover,nav a.on{background:#24415C;color:#fff}
+header{background:linear-gradient(135deg,var(--ink) 0%,var(--ink2) 60%,#1E4B5E 100%);color:#fff;padding:46px 0 38px}
+.hero{display:grid;grid-template-columns:170px 1fr;gap:30px;align-items:center}
+.photo{width:170px;height:170px;border-radius:50%;border:4px solid #fff3;background:linear-gradient(135deg,#2A6F78,#6DB5B0);display:flex;align-items:center;justify-content:center;font:700 48px var(--disp);color:#fff;cursor:pointer;overflow:hidden;position:relative}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo small{position:absolute;bottom:0;left:0;right:0;background:#0008;font:600 10px var(--body);text-align:center;padding:4px}
+h1{font:700 44px/1.05 var(--disp);letter-spacing:-.5px}
+.tag{color:#8FD6D3;font-weight:700;margin:8px 0 12px;font-size:16px}
+.lead{color:#D5E0EA;max-width:70ch}
+.cta{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.btn{display:inline-flex;gap:7px;align-items:center;padding:9px 15px;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;border:1px solid #ffffff40;color:#fff;background:#ffffff14;cursor:pointer;font-family:var(--body)}
+.btn:hover{background:#ffffff2b}.btn.p{background:var(--gold);border-color:var(--gold);color:#101820}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px}
+.stat{background:#ffffff12;border:1px solid #ffffff22;border-radius:14px;padding:14px;text-align:center}
+.stat b{display:block;font:700 30px var(--disp);color:#fff}.stat span{font-size:12px;color:#B9C8D6}
+section{padding:42px 0 6px}
+.eb{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--teal)}
+h2{font:700 28px/1.15 var(--disp);margin:4px 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ach{border-top:4px solid var(--teal)}.ach b{font:700 17px var(--disp);display:block;margin-bottom:5px}.ach p{color:var(--mut);font-size:14px}
+.tl{position:relative;padding-left:34px}.tl:before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:3px;background:linear-gradient(var(--teal),#9FD0D0)}
+.role{position:relative;margin-bottom:16px}
+.role:before{content:"";position:absolute;left:-31px;top:20px;width:15px;height:15px;border-radius:50%;background:var(--teal);border:3px solid var(--paper)}
+.role.now:before{background:var(--gold)}
+.role summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.role summary::-webkit-details-marker{display:none}
+.role summary b{font:700 18px var(--disp)}.when{font-weight:800;font-size:12px;color:var(--teal);letter-spacing:.5px}
+.org{color:var(--mut);font-size:13.5px;margin:2px 0 8px}
+.role summary:after{content:"Hide ▲";font-size:11px;color:var(--mut);font-weight:700}
+.role:not([open]) summary:after{content:"Show ▼"}
+.sub{font-weight:800;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin:14px 0 4px}
+ul{padding-left:18px}li{margin-bottom:6px}li b{color:var(--ink)}
+li.hit,.hit{background:var(--hl);border-radius:6px;box-shadow:0 0 0 4px var(--hl)}
+.dim{opacity:.45}
+.ba{width:100%;border-collapse:collapse;font-size:14px}.ba th{text-align:left;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);padding:8px}
+.ba td{padding:9px 8px;border-top:1px solid var(--line);vertical-align:top}.ba td.ar{color:var(--gold);font-weight:800;width:20px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 12px;font:600 12.5px var(--body);cursor:pointer;color:var(--ink)}
+.chip:hover{border-color:var(--teal);background:var(--teal2)}.chip.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.app{background:var(--teal2);border-color:#BFE2E2;cursor:default}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tab{padding:8px 15px;border-radius:999px;border:1px solid var(--line);background:#fff;font:700 13px var(--body);cursor:pointer}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.badge{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 10px;text-decoration:none;transition:.15s}
+.badge:hover{transform:translateY(-3px);box-shadow:0 10px 22px #0f1e2e1f;border-color:var(--teal)}
+.badge img{width:104px;height:104px;object-fit:contain}
+.badge span{font-size:12.5px;font-weight:700;line-height:1.3}.badge small{font-size:11px;color:var(--mut)}
+.badge.hero2{grid-column:span 2;background:linear-gradient(135deg,var(--gold2),#fff)}
+.badge.hero2 img{width:130px;height:130px}
+.fb{display:none;width:104px;height:104px;border-radius:50%;background:var(--ink2);color:#fff;align-items:center;justify-content:center;font:800 18px var(--body)}
+.pad{padding:0 0 46px}
+footer{background:var(--ink);color:#B9C8D6;padding:30px 0;margin-top:30px;font-size:13px}
+footer a{color:#fff}
+.note{font-size:12.5px;color:var(--mut);margin-top:10px}
+@media(max-width:820px){.hero{grid-template-columns:1fr;text-align:center;justify-items:center}.cta{justify-content:center}.stats{grid-template-columns:repeat(2,1fr)}.grid2,.grid3{grid-template-columns:1fr}h1{font-size:34px}.badge.hero2{grid-column:span 1}}
+@media print{nav,.cta,.tabs,.no-print,.role summary:after{display:none!important}header{background:#0F1E2E!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.role{break-inside:avoid}body{background:#fff}.badge{break-inside:avoid}.card{box-shadow:none}details:not([open])>*{display:block}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+header{position:relative;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%;opacity:.55;pointer-events:none}
+header .wrap{position:relative}
+.photo{width:190px;height:190px;box-shadow:0 0 0 6px #ffffff14,0 0 0 7px #B8893A99,0 20px 40px #0008}
+.hero{grid-template-columns:190px 1fr}
+.kicker{display:inline-block;font-size:11px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:#E3C27D;border:1px solid #B8893A66;border-radius:999px;padding:5px 12px;margin-bottom:14px}
+h1{font-size:54px}
+.stat{backdrop-filter:blur(4px);transition:.2s}.stat:hover{transform:translateY(-3px);background:#ffffff1f}
+.stat b{background:linear-gradient(#fff,#E3C27D);-webkit-background-clip:text;background-clip:text;color:transparent}
+.glass{background:linear-gradient(160deg,#fff,#F1F5F8);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 18px 40px -22px #0f1e2e55}
+/* stack diagram */
+.stackwrap{display:grid;grid-template-columns:1.15fr 1fr;gap:22px;align-items:stretch}
+.layers{display:flex;flex-direction:column;gap:10px}
+.layer{border:0;text-align:left;border-radius:14px;padding:14px 16px;color:#fff;font:700 14px var(--body);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;transition:.18s;position:relative}
+.layer small{font-weight:600;opacity:.85;font-size:12px}
+.layer:hover{transform:translateX(6px)}
+.layer.on{box-shadow:0 0 0 3px var(--gold),0 12px 26px -10px #0006;transform:translateX(10px)}
+.L1{background:linear-gradient(90deg,#0F1E2E,#1F3A55)}.L2{background:linear-gradient(90deg,#16506A,#1F8A8A)}.L3{background:linear-gradient(90deg,#7A5A1E,#B8893A)}.L4{background:linear-gradient(90deg,#2B3F5C,#4C6A92)}.L5{background:linear-gradient(90deg,#4B2E5E,#7C5A99)}
+.detail{background:#0F1E2E;color:#E4ECF3;border-radius:18px;padding:22px;min-height:250px}
+.detail h3{font:700 22px var(--disp);color:#fff;margin-bottom:8px}.detail p{color:#B9C8D6;font-size:14px;margin-bottom:12px}
+.detail .chips .chip{background:#ffffff12;color:#fff;border-color:#ffffff30;cursor:default}
+/* career track */
+.track{position:relative;margin:6px 0 4px;padding:34px 0 8px;overflow-x:auto}
+.track svg{min-width:860px;width:100%;height:auto;display:block}
+.tn{cursor:pointer}.tn circle{transition:.2s}.tn:hover circle.d{r:13;fill:#B8893A}
+.tn text{font-family:var(--body)}
+/* flow */
+.flow{display:grid;grid-template-columns:1fr 60px 1fr;gap:10px;align-items:stretch}
+.fcol{border-radius:16px;padding:16px}
+.fb1{background:#F2E6E4;border:1px solid #E5CFCB}.fb2{background:var(--teal2);border:1px solid #B7DDDD}
+.fcol h4{font:800 11px var(--body);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.fi{background:#fff;border-radius:10px;padding:8px 11px;margin-bottom:8px;font-size:13px;font-weight:600;border:1px solid #0001}
+.fi small{display:block;color:var(--mut);font-weight:500;font-size:11px}
+.farrow{display:flex;align-items:center;justify-content:center}
+.farrow svg{width:46px;overflow:visible}
+.dash{stroke-dasharray:6 6;animation:dash 1.2s linear infinite}@keyframes dash{to{stroke-dashoffset:-24}}
+.badge{transform-style:preserve-3d;will-change:transform}
+.reveal{opacity:1}.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.js .reveal.in{opacity:1;transform:none}
+@media(max-width:820px){.stackwrap,.flow{grid-template-columns:1fr}.farrow{transform:rotate(90deg);height:40px}h1{font-size:38px}.hero{grid-template-columns:1fr}.photo{width:170px;height:170px}}
+@media(prefers-reduced-motion:reduce){.dash{animation:none}#net{display:none}.js .reveal{opacity:1;transform:none}}
+@media print{#net,.track{display:none}.js .reveal{opacity:1!important;transform:none!important}}
+</style></head><body>
+<nav><div class="wrap"><b>Siddharth Chetan</b>
+<a href="#profile">Profile</a><a href="#impact">Impact</a><a href="#journey">Journey</a><a href="#alauda">Alauda</a><a href="#people">Team &amp; leadership</a><a href="#certs">Certifications</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
+
+<header><canvas id="net" aria-hidden="true"></canvas><div class="wrap">
+ <div class="hero">
+  <label class="photo" title="Click to add your photo"><input id="pf" type="file" accept="image/*" hidden><span id="mono">SC</span><small class="no-print">Click to add photo</small></label>
+  <div>
+   <span class="kicker">Executive profile · Platform, Cloud &amp; Reliability</span><h1>Siddharth Chetan</h1>
+   <div class="tag">Enterprise Cloud &amp; Platform Leader · Lead Solutions Architect · SRE &amp; Automation</div>
+   <p class="lead">Platform executive with 18 years across banking and telecoms. I architect and run the container, cloud and automation platforms that business-critical banking applications depend on, lead 25–30 engineers at Absa Africa Regional Operations, and build engineers into certified SRE and DevOps professionals.</p>
+   <div class="cta">
+    <a class="btn p" href="mailto:singhsidha@gmail.com">✉ singhsidha@gmail.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/siddharth-c-452b3320" target="_blank" rel="noopener">in LinkedIn</a>
+    <a class="btn" href="tel:+27730812365">☎ +27 73 081 2365</a>
+    <button class="btn no-print" onclick="window.print()">⬇ Save as PDF</button>
+   </div>
+  </div>
+ </div>
+ <div class="stats">
+  <a class="stat" href="#certs" style="text-decoration:none"><b>12</b><span>AWS certifications · Golden Jacket</span></a>
+  <a class="stat" href="#certs" style="text-decoration:none"><b>5</b><span>CNCF Kubestronaut certifications</span></a>
+  <a class="stat" href="#alauda" style="text-decoration:none"><b>11</b><span>banking apps moved to Alauda</span></a>
+  <a class="stat" href="#people" style="text-decoration:none"><b>25–30</b><span>engineers led at Absa ARO</span></a>
+  <a class="stat" href="#journey" style="text-decoration:none"><b>18</b><span>years in platforms &amp; infrastructure</span></a>
+ </div>
+</div></header>
+
+<main class="wrap">
+<section id="profile"><div class="eb">Executive profile</div><h2>Platform leadership built on hands-on automation</h2>
+ <div class="card"><p>Enterprise cloud and platform leader and site reliability specialist. I have been an automation specialist throughout my career and have delivered large infrastructure programmes for banks and telecoms, from data-centre migrations to container platform re-platforming. At Absa Africa Regional Operations I am Lead Solutions Architect: I own solution design, production reliability and platform standards for 11 business-critical banking applications, and I architected and led the end-to-end move from OpenShift to Alauda Container Platform. I hold the AWS Golden Jacket (all 12 AWS certifications) and all five CNCF Kubestronaut certifications, and I have a record of growing teams, at MTN and at Absa, into certified, automation-first engineers.</p></div>
+</section>
+
+<section id="impact"><div class="eb">Selected impact</div><h2>What I have delivered</h2>
+ <div class="grid3">
+  <div class="card ach"><b>OpenShift to Alauda, end to end</b><p>Architected and led the migration of 11 banking applications, including gateway, registry and logging modernisation and decommissioning of OpenShift 3 and 4.</p></div>
+  <div class="card ach"><b>Data-centre migration, Absa Towers to Samrand</b><p>Led the move of the banking Linux estate using P2V, P2P and lift-and-shift approaches.</p></div>
+  <div class="card ach"><b>Graduates to SRE and DevOps engineers</b><p>Groomed a team of 15 graduates through continuous training and certification into engineers running automation in production.</p></div>
+  <div class="card ach"><b>OpenShift 3 to 4 and GitOps</b><p>Delivered the AIB and AMB migration to OpenShift 4 and ArgoCD GitOps for a digital wallet.</p></div>
+  <div class="card ach"><b>Production reliability</b><p>Own reliability for the platform hosting 11 critical banking applications: incident leadership, vendor root-cause analysis, HA and capacity design.</p></div>
+  <div class="card ach"><b>Standards and AI-assisted engineering</b><p>Authored the CI/CD standard (GitHub Actions, ArgoCD, JFrog, SonarQube) and applied LLMs under expert review and governance.</p></div>
+ </div>
+</section>
+
+
+<section id="stack" class="reveal"><div class="eb">Platform stack</div><h2>The layers I design and run</h2>
+ <div class="stackwrap">
+  <div class="layers" role="tablist">
+   <button class="layer L1 on" data-i="0"><span>Business applications<br><small>11 critical banking applications</small></span><span>›</span></button>
+   <button class="layer L2" data-i="1"><span>Container platform<br><small>OpenShift 3 and 4 · Alauda Container Platform</small></span><span>›</span></button>
+   <button class="layer L3" data-i="2"><span>Delivery and GitOps<br><small>ArgoCD · GitHub Actions · JFrog · SonarQube</small></span><span>›</span></button>
+   <button class="layer L4" data-i="3"><span>Automation and reliability<br><small>Ansible · Terraform · Prometheus · ELK · AIOps</small></span><span>›</span></button>
+   <button class="layer L5" data-i="4"><span>Infrastructure and cloud<br><small>VMware · Huawei HyperFusion · AWS · Azure · RHEL</small></span><span>›</span></button>
+  </div>
+  <div class="detail" id="detail"></div>
+ </div>
+ <p class="note">Select a layer to see what I own there.</p>
+</section>
+<section id="journey"><div class="eb">Career journey</div><h2>Experience</h2>
+ <p class="note no-print" style="margin:-8px 0 14px">Select a technology under Skills to highlight where I used it.</p>
+ <div class="track no-print"><svg viewBox="0 0 900 150" role="img" aria-label="Career timeline 2008 to today">
+<defs><linearGradient id="tg" x1="0" x2="1"><stop offset="0" stop-color="#9FD0D0"/><stop offset="1" stop-color="#1F8A8A"/></linearGradient></defs>
+<line x1="40" y1="70" x2="860" y2="70" stroke="url(#tg)" stroke-width="5" stroke-linecap="round"/>
+<g class="tn" data-go="r5"><circle class="d" cx="60" cy="70" r="9" fill="#1F8A8A"/><text x="60" y="40" text-anchor="middle" font-size="12" font-weight="800" fill="#1F8A8A">2008</text><text x="60" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#0F1E2E">Dell</text><text x="60" y="124" text-anchor="middle" font-size="10" fill="#5A6B7A">Support expert</text></g>
+<g class="tn" data-go="r4"><circle class="d" cx="215" cy="70" r="9" fill="#1F8A8A"/><text x="215" y="40" text-anchor="middle" font-size="12" font-weight="800" fill="#1F8A8A">2010</text><text x="215" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#0F1E2E">Amdocs</text><text x="215" y="124" text-anchor="middle" font-size="10" fill="#5A6B7A">Led team of 11</text></g>
+<g class="tn" data-go="r3"><circle class="d" cx="370" cy="70" r="9" fill="#1F8A8A"/><text x="370" y="40" text-anchor="middle" font-size="12" font-weight="800" fill="#1F8A8A">2016</text><text x="370" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#0F1E2E">Absa (EOH)</text><text x="370" y="124" text-anchor="middle" font-size="10" fill="#5A6B7A">DC migration to Samrand</text></g>
+<g class="tn" data-go="r2"><circle class="d" cx="525" cy="70" r="9" fill="#1F8A8A"/><text x="525" y="40" text-anchor="middle" font-size="12" font-weight="800" fill="#1F8A8A">2018</text><text x="525" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#0F1E2E">Nedbank</text><text x="525" y="124" text-anchor="middle" font-size="10" fill="#5A6B7A">Automation</text></g>
+<g class="tn" data-go="r1"><circle class="d" cx="680" cy="70" r="9" fill="#1F8A8A"/><text x="680" y="40" text-anchor="middle" font-size="12" font-weight="800" fill="#1F8A8A">2019</text><text x="680" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#0F1E2E">MTN</text><text x="680" y="124" text-anchor="middle" font-size="10" fill="#5A6B7A">15 graduates to SRE</text></g>
+<g class="tn" data-go="r0"><circle cx="830" cy="70" r="20" fill="#B8893A22"/><circle class="d" cx="830" cy="70" r="11" fill="#B8893A"/><text x="830" y="38" text-anchor="middle" font-size="12" font-weight="800" fill="#B8893A">2020 – today</text><text x="830" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#0F1E2E">Absa ARO</text><text x="830" y="124" text-anchor="middle" font-size="10" fill="#5A6B7A">Lead Solutions Architect</text></g>
+</svg></div>
+<div class="tl">
+
+ <details id="r0" class="role now" open><summary><b>Lead Solutions Architect – Kubernetes, OpenShift &amp; Alauda Container Platform</b><span class="when">FEB 2020 – PRESENT</span></summary>
+  <div class="org">Absa Africa Regional Operations (ARO), Johannesburg · Engaged via Vagmine Tech IT · Banking &amp; Financial Services</div>
+  <div class="card">
+   <div class="sub" id="alauda">Signature programme: OpenShift to Alauda Container Platform</div>
+   <ul>
+    <li data-t="alauda openshift"><b>Architected and led the end-to-end programme</b> to move 11 business-critical applications (AIB/AMB, Hello Money, Crypto, Onboarding, BSA/MCE, Teller, Kenya Inhouse Aggregator, eBox/JBPM, Card Tokenization, Falcon and AMOL) from OpenShift Container Platform to Alauda Container Platform, owning strategy, target architecture, migration, hardening, cutover and decommissioning.</li>
+    <li data-t="alauda"><b>Defined the migration approach for application teams:</b> workload discovery, dependency assessment, platform-construct mapping, sequencing, readiness criteria, testing, cutover preparation and rollback planning.</li>
+    <li data-t="gateway alauda"><b>Re-platformed ingress and connectivity:</b> replaced OpenShift Routes with a Gateway API architecture (HTTPRoute, TLSRoute, TCPRoute), re-implemented ingress and gateway services, and remediated TLS certificate trust chains and secure downstream connectivity.</li>
+    <li data-t="gateway jfrog elk"><b>Modernised the wider technology stack:</b> Red Hat 3scale and RHSSO replaced by Kong and Envoy Gateway; OpenShift internal registries replaced by JFrog Artifactory with Xray image scanning; Elastic Stack upgraded to 8.x.</li>
+    <li data-t="sre alauda"><b>Stabilised and optimised the platform at scale:</b> DNS and CoreDNS tuning, resource right-sizing, node capacity and scheduling, session persistence and gateway timeout tuning, including complex scheduling and DNS challenges on the AMOL application.</li>
+    <li data-t="sre security"><b>Validated production readiness</b> through performance and stress testing and end-to-end readiness checks; prepared CSO-facing assurance on downstream integrations, registry strategy, penetration testing and kube-bench hardening.</li>
+    <li data-t="llm alauda"><b>Applied LLM-assisted engineering:</b> compared OpenShift and Alauda constructs, accelerated application inventory analysis, drafted configuration and migration artefacts, identified conversion gaps and supported troubleshooting. Every AI-assisted output passed expert review, testing and governance checkpoints before production use.</li>
+    <li data-t="alauda openshift"><b>Completed the programme with decommissioning</b> of the OpenShift 3 and 4 environments, and produced reusable migration guidance, per-application issue and resolution records and management reporting for application, security, architecture and operations stakeholders.</li>
+   </ul>
+   <div class="sub">Platform leadership &amp; architecture</div>
+   <ul>
+    <li data-t="leadership"><b>Lead a 25–30 strong engineering and operations organisation</b> supporting cloud-native platforms for Absa ARO; own solution design across business, information and technical layers and set platform engineering standards for availability, security, scalability and repeatable delivery.</li>
+    <li data-t="openshift gitops"><b>Delivered the AIB and AMB migration from OpenShift 3 to OpenShift 4</b> and implemented GitOps automation with ArgoCD for a digital wallet application, supporting African country teams in containerising and migrating applications to OpenShift.</li>
+    <li data-t="gitops cicd"><b>Authored the CI/CD standardisation design</b> for the AR Markets Architecture Forum: GitHub Actions on ephemeral runners, ArgoCD delivery, JFrog Artifactory and Xray, SonarQube and 14 mandatory pipeline controls.</li>
+    <li data-t="aws terraform automation"><b>Architected secure, highly available AWS solutions</b> and led Infrastructure as Code (Terraform, CloudFormation, Ansible) and CI/CD automation; performed AWS Well-Architected reviews and supported migration of on-premises applications to AWS and Azure.</li>
+    <li data-t="openshift sre"><b>Expert-level OpenShift 3 and 4 architecture and administration</b> across multiple data centres on VMware and Huawei HyperFusion, with RHEL 7, RHEL 8 and CoreOS engineering for OpenShift clusters and Prometheus-based observability.</li>
+    <li data-t="virt openshift ansible gitops"><b>Led solution architecture for VMware-to-OpenShift Virtualization migration design</b> (OVE and OKE options with Migration Toolkit for Virtualization, ACM, ODF, Ansible Automation Platform and ArgoCD) for an enterprise banking virtualisation RFI.</li>
+    <li data-t="ansible terraform gitops automation"><b>Automate platform operations end to end</b> with Ansible playbooks, Ansible Tower and Terraform for jobs, microservice deployments and pipelines, and apply GitOps (ArgoCD) as the standard delivery model for application teams.</li>
+   </ul>
+   <div class="sub">Site reliability &amp; operations</div>
+   <ul>
+    <li data-t="sre"><b>Own production reliability for the platform hosting 11 business-critical banking applications:</b> incident diagnosis, root-cause analysis with platform vendors, escalation paths, rollback planning and steady-state support ownership.</li>
+    <li data-t="sre"><b>Engineer for resilience and performance:</b> high-availability and multi-data-centre design, capacity expansion and scheduling, resource right-sizing, DNS and gateway tuning, and stress testing before cutover.</li>
+    <li data-t="elk llm sre"><b>Run observability and AI-assisted operations:</b> Prometheus and ELK 8.x monitoring, plus LLM-assisted troubleshooting and analysis that is always validated by an engineer before action.</li>
+   </ul>
+  </div></details>
+
+ <details id="r1" class="role" open><summary><b>Domain Lead &amp; Technical Specialist, Linux and F5</b><span class="when">JUL 2019 – FEB 2020</span></summary>
+  <div class="org">MTN, Johannesburg · Contract · Telecommunications</div>
+  <div class="card"><ul>
+   <li data-t="leadership"><b>Led the Linux and F5 technical domain and a team of 15 graduates:</b> escalations, work allocation, rosters, quarterly KPIs, individual goals and personal development plans.</li>
+   <li data-t="leadership sre automation"><b>Groomed the graduates into SRE and DevOps engineers</b> through continuous training: they passed their certifications and went on to run automation in production.</li>
+   <li data-t="ansible automation"><b>Implemented Red Hat Satellite and capsule services</b> across on-premises, DMZ, Azure and cloud; automated registration, patching and configuration with Ansible; built server-hardening automation to MTN security standards.</li>
+   <li data-t="k8s"><b>Built Kubernetes control-plane and worker nodes</b> with cluster networking and ingress; implemented Red Hat High Availability clustering for a mission-critical application.</li>
+  </ul></div></details>
+
+ <details id="r2" class="role" open><summary><b>Linux Consultant, Automation</b><span class="when">JUN 2018 – JUN 2019</span></summary>
+  <div class="org">Nedbank (via EOH Mthombo), Johannesburg · Banking &amp; Financial Services</div>
+  <div class="card"><ul>
+   <li data-t="ansible automation"><b>Implemented Red Hat Satellite 6.3</b> with distributed capsule servers across segmented and cloud-connected environments; automated provisioning, configuration and repository management with Ansible.</li>
+   <li data-t="ansible openshift"><b>Supported Docker, JBoss and OpenShift platforms,</b> planned Ansible Tower, and delivered new initiatives from planning to go-live.</li>
+  </ul></div></details>
+
+ <details id="r3" class="role" open><summary><b>Linux Specialist</b><span class="when">JUN 2016 – MAY 2018</span></summary>
+  <div class="org">Absa (via EOH Mthombo), Johannesburg · Banking &amp; Financial Services</div>
+  <div class="card"><ul>
+   <li data-t="dc"><b>Led the data-centre migration from Absa Towers South to Samrand,</b> using P2V, P2P and lift-and-shift approaches across the banking Linux estate.</li>
+   <li data-t="sre"><b>Supported a banking estate of 2,000+ Linux servers;</b> delivered infrastructure for business-unit projects across OS, network, firewall, storage and performance requirements.</li>
+   <li data-t="automation ansible aws"><b>Automated operations with Chef, Ansible and Docker;</b> planned Red Hat Satellite for Absa Africa and supported AWS infrastructure migration.</li>
+   <li data-t="leadership"><b>Trained the team</b> on Red Hat products and new open-source tools.</li>
+  </ul></div></details>
+
+ <details id="r4" class="role"><summary><b>Senior Subject Matter Expert, System Administration</b><span class="when">OCT 2010 – MAR 2016</span></summary>
+  <div class="org">Amdocs, India (assignments in Indonesia, Brazil and Argentina) · Telecommunications</div>
+  <div class="card"><ul><li data-t="leadership"><b>Administered Linux and Solaris environments</b> for international telecom customers; led a team of 11 and produced KPI and management reporting.</li></ul></div></details>
+
+ <details id="r5" class="role"><summary><b>Senior Technical Support Expert</b><span class="when">JUN 2008 – SEP 2010</span></summary>
+  <div class="org">Dell International Services, Gurugram, India</div>
+  <div class="card"><ul><li><b>Supported US business clients</b> on servers, networking and software; served as total-solution and productivity point of contact and coached team members.</li></ul></div></details>
+ </div>
+</section>
+
+<section><div class="eb">Alauda programme</div><h2>Before and after</h2>
+ <div class="flow" style="margin-bottom:18px">
+ <div class="fcol fb1"><h4 style="color:#9C4B3F">Before</h4><div class="fi">OpenShift Container Platform<small>Versions 3 and 4</small></div><div class="fi">OpenShift Routes</div><div class="fi">Red Hat 3scale and RHSSO</div><div class="fi">OpenShift internal registries</div><div class="fi">Elastic Stack<small>Nearing end of support</small></div></div>
+ <div class="farrow"><svg viewBox="0 0 46 200" height="200"><path class="dash" d="M4 100 H38" stroke="#B8893A" stroke-width="4" fill="none"/><path d="M30 88 L42 100 L30 112" stroke="#B8893A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+ <div class="fcol fb2"><h4 style="color:#16706F">After</h4><div class="fi">Alauda Container Platform<small>11 applications migrated</small></div><div class="fi">Gateway API<small>HTTPRoute · TLSRoute · TCPRoute</small></div><div class="fi">Kong and Envoy Gateway</div><div class="fi">JFrog Artifactory with Xray scanning</div><div class="fi">Elastic Stack 8.x</div></div>
+</div>
+<div class="card"><table class="ba"><tr><th>Layer</th><th>Before</th><th></th><th>After</th></tr>
+  <tr><td><b>Platform</b></td><td>OpenShift Container Platform 3 and 4</td><td class="ar">→</td><td>Alauda Container Platform (ACP)</td></tr>
+  <tr><td><b>Ingress</b></td><td>OpenShift Routes</td><td class="ar">→</td><td>Gateway API: HTTPRoute, TLSRoute, TCPRoute</td></tr>
+  <tr><td><b>API gateway and identity</b></td><td>Red Hat 3scale and RHSSO</td><td class="ar">→</td><td>Kong and Envoy Gateway</td></tr>
+  <tr><td><b>Registry and scanning</b></td><td>OpenShift internal registries</td><td class="ar">→</td><td>JFrog Artifactory with Xray image scanning</td></tr>
+  <tr><td><b>Logging</b></td><td>Elastic Stack nearing end of support</td><td class="ar">→</td><td>Elastic Stack 8.x</td></tr></table>
+  <div class="chips" style="margin-top:14px"><span class="chip app">AIB / AMB</span><span class="chip app">Hello Money</span><span class="chip app">Crypto</span><span class="chip app">Onboarding</span><span class="chip app">BSA / MCE</span><span class="chip app">Teller</span><span class="chip app">Kenya Inhouse Aggregator</span><span class="chip app">eBox / JBPM</span><span class="chip app">Card Tokenization</span><span class="chip app">Falcon</span><span class="chip app">AMOL</span></div></div>
+</section>
+
+<section id="people"><div class="eb">Team &amp; leadership</div><h2>Building engineers, not just platforms</h2>
+ <div class="grid2">
+  <div class="card"><b style="font:700 18px var(--disp)">MTN: 15 graduates to SRE and DevOps</b><ul style="margin-top:8px"><li>Led a team of 15 graduates in the Linux and F5 domain.</li><li>Ran continuous training so the whole team cleared industry certifications.</li><li>Moved them from learning to running automation in production.</li></ul></div>
+  <div class="card"><b style="font:700 18px var(--disp)">Absa ARO: 25–30 engineers</b><ul style="margin-top:8px"><li>Lead engineering and operations for the cloud-native platforms.</li><li>Own solution design from business to technical layers.</li><li>Set platform standards for availability, security and repeatable delivery.</li></ul></div>
+ </div>
+ <p class="note">Earlier: led a team of 11 at Amdocs; trained the Linux team on Red Hat products at Absa.</p>
+</section>
+
+<section id="certs"><div class="eb">Credentials</div><h2>20 certifications, official badges</h2>
+ <div class="tabs" role="tablist"><button class="tab on" data-f="all">All</button><button class="tab" data-f="k8s">Kubernetes</button><button class="tab" data-f="aws">AWS</button><button class="tab" data-f="rh">Red Hat &amp; HashiCorp</button></div>
+ <div class="wall" id="wall"></div>
+ <p class="note">Each badge opens its official Credly page. Red Hat partner accreditations (5): Delivery Specialist (Platform, Storage, RHEL for IBM Z), Sales Engineer Specialist (Storage), Sales Specialist (Platform).</p>
+</section>
+
+<section id="skills"><div class="eb">Capabilities</div><h2>Skills across the stack</h2>
+ <p class="note" style="margin:-8px 0 12px">Select a skill to highlight related experience above.</p>
+ <div class="grid2">
+  <div class="card"><b>Red Hat technologies</b><div class="chips" style="margin-top:9px"><button class="chip" data-k="openshift">OpenShift 3 and 4</button><button class="chip" data-k="virt">OpenShift Virtualization</button><button class="chip" data-k="openshift">OpenShift AI</button><button class="chip" data-k="ansible">Ansible Automation Platform</button><button class="chip" data-k="virt">ACM · ODF · MTV</button><button class="chip" data-k="ansible">Satellite</button></div></div>
+  <div class="card"><b>Kubernetes &amp; cloud native</b><div class="chips" style="margin-top:9px"><button class="chip" data-k="k8s">Kubernetes</button><button class="chip" data-k="alauda">Alauda Container Platform</button><button class="chip" data-k="gateway">Gateway API · Kong · Envoy</button><button class="chip" data-k="jfrog">JFrog</button></div></div>
+  <div class="card"><b>GitOps &amp; automation</b><div class="chips" style="margin-top:9px"><button class="chip" data-k="gitops">ArgoCD</button><button class="chip" data-k="ansible">Ansible</button><button class="chip" data-k="terraform">Terraform · CloudFormation</button><button class="chip" data-k="cicd">GitHub Actions · CI/CD</button><button class="chip" data-k="automation">Automation</button></div></div>
+  <div class="card"><b>SRE, observability &amp; AIOps</b><div class="chips" style="margin-top:9px"><button class="chip" data-k="sre">HA · DR · RCA · capacity</button><button class="chip" data-k="elk">Prometheus · ELK 8.x</button><button class="chip" data-k="llm">LLM-assisted operations</button></div></div>
+  <div class="card"><b>Cloud, Linux &amp; migration</b><div class="chips" style="margin-top:9px"><button class="chip" data-k="aws">AWS</button><button class="chip" data-k="dc">Data-centre migration · P2V · P2P</button><button class="chip" data-k="security">Security hardening</button></div></div>
+  <div class="card"><b>Leadership</b><div class="chips" style="margin-top:9px"><button class="chip" data-k="leadership">Team leadership and coaching</button><span class="chip app">Platform strategy</span><span class="chip app">Executive engagement</span></div></div>
+ </div>
+</section>
+
+<section id="contact" class="pad"><div class="eb">Education &amp; contact</div><h2>Get in touch</h2>
+ <div class="grid2">
+  <div class="card"><b>B.Tech, Computer Science and Engineering</b><br>Uttar Pradesh Technical University, Lucknow, 2008<p class="note">International delivery: South Africa, India, Indonesia, Brazil, Argentina. References on request.</p></div>
+  <div class="card"><b>Siddharth Chetan</b><br>Johannesburg, South Africa · South African Permanent Resident<br><a href="mailto:singhsidha@gmail.com">singhsidha@gmail.com</a> · <a href="tel:+27730812365">+27 73 081 2365</a><br><a href="https://www.linkedin.com/in/siddharth-c-452b3320" target="_blank" rel="noopener">linkedin.com/in/siddharth-c-452b3320</a></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">Siddharth Chetan · Enterprise Cloud &amp; Platform Leader</div></footer>
+
+<script>
+// To link your own verified badges, replace a url below with your Credly public badge link.
+var C="https://www.credly.com/org/";
+var CERTS=[
+{g:"k8s",n:"Kubestronaut",s:"CNCF / Linux Foundation",i:"cd6c6449-6814-4613-a2d3-13cf4ac5be4f/image.png",u:C+"the-linux-foundation/badge/kubestronaut",big:1},
+{g:"k8s",n:"CKA",s:"Certified Kubernetes Administrator",i:"8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png",u:C+"the-linux-foundation/badge/cka-certified-kubernetes-administrator"},
+{g:"k8s",n:"CKAD",s:"Certified Kubernetes Application Developer",i:"cc8adc83-1dc6-4d57-8e20-22171247e052/blob",u:C+"the-linux-foundation/badge/ckad-certified-kubernetes-application-developer"},
+{g:"k8s",n:"CKS",s:"Certified Kubernetes Security Specialist",i:"9945dfcb-1cca-4529-85e6-db1be3782210/kubernetes-security-specialist-logo2.png",u:C+"the-linux-foundation/badge/cks-certified-kubernetes-security-specialist"},
+{g:"k8s",n:"KCNA",s:"Kubernetes and Cloud Native Associate",i:"f28f1d88-428a-47f6-95b5-7da1dd6c1000/KCNA_badge.png",u:C+"the-linux-foundation/badge/kcna-kubernetes-and-cloud-native-associate"},
+{g:"k8s",n:"KCSA",s:"Kubernetes and Cloud Native Security Associate",i:"67dd8a95-8876-4051-9cb9-3d97c204f85a/image.png",u:C+"the-linux-foundation/badge/kcsa-kubernetes-and-cloud-native-security-associate"},
+{g:"aws",n:"Cloud Practitioner",s:"AWS Certified",i:"00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",u:C+"amazon-web-services/badge/aws-certified-cloud-practitioner"},
+{g:"aws",n:"AI Practitioner",s:"AWS Certified",i:"4d4693bb-530e-4bca-9327-de07f3aa2348/image.png",u:C+"amazon-web-services/badge/aws-certified-ai-practitioner"},
+{g:"aws",n:"Solutions Architect Associate",s:"AWS Certified",i:"0e284c3f-5164-4b21-8660-0d84737941bc/image.png",u:C+"amazon-web-services/badge/aws-certified-solutions-architect-associate"},
+{g:"aws",n:"Developer Associate",s:"AWS Certified",i:"b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png",u:C+"amazon-web-services/badge/aws-certified-developer-associate"},
+{g:"aws",n:"SysOps Administrator Associate",s:"AWS Certified",i:"f0d3fbb9-bfa7-4017-9989-7bde8eaf42b1/image.png",u:C+"amazon-web-services/badge/aws-certified-sysops-administrator-associate"},
+{g:"aws",n:"Data Engineer Associate",s:"AWS Certified",i:"e5c85d7f-4e50-431e-b5af-fa9d9b0596e7/image.png",u:C+"amazon-web-services/badge/aws-certified-data-engineer-associate"},
+{g:"aws",n:"ML Engineer Associate",s:"AWS Certified",i:"1a634b4e-3d6b-4a74-b118-c0dcb429e8d2/image.png",u:C+"amazon-web-services/badge/aws-certified-machine-learning-engineer-associate"},
+{g:"aws",n:"Solutions Architect Professional",s:"AWS Certified",i:"2d84e428-9078-49b6-a804-13c15383d0de/image.png",u:C+"amazon-web-services/badge/aws-certified-solutions-architect-professional"},
+{g:"aws",n:"DevOps Engineer Professional",s:"AWS Certified",i:"bd31ef42-d460-493e-8503-39592aaf0458/image.png",u:C+"amazon-web-services/badge/aws-certified-devops-engineer-professional"},
+{g:"aws",n:"Security Specialty",s:"AWS Certified",i:"53acdae5-d69f-4dda-b650-d02ed7a50dd7/image.png",u:C+"amazon-web-services/badge/aws-certified-security-specialty"},
+{g:"aws",n:"Advanced Networking Specialty",s:"AWS Certified",i:"4d08274f-64c1-495e-986b-3143f51b1371/image.png",u:C+"amazon-web-services/badge/aws-certified-advanced-networking-specialty"},
+{g:"aws",n:"Machine Learning Specialty",s:"AWS Certified",i:"778bde6c-ad1c-4312-ac33-2fa40d50a147/image.png",u:C+"amazon-web-services/badge/aws-certified-machine-learning-specialty"},
+{g:"rh",n:"RHCSA",s:"Red Hat Certified System Administrator (RHEL 7)",i:"572de0ba-2c59-4816-a59d-b0e1687e45ee/image.png",u:C+"red-hat-inc/badge/red-hat-certified-system-administrator-rhcsa"},
+{g:"rh",n:"RHCE",s:"Red Hat Certified Engineer (RHEL 7)",i:"7d4ee7c1-e4ef-434c-897b-7e2161243428/blob",u:C+"red-hat-inc/badge/red-hat-certified-engineer-rhce"},
+{g:"rh",n:"Terraform Associate",s:"HashiCorp Certified",i:"0dc62494-dc94-469a-83af-e35309f27356/blob",u:C+"hashicorp/badge/hashicorp-certified-terraform-associate"}
+];
+var wall=document.getElementById("wall");
+CERTS.forEach(function(c){
+ var a=document.createElement("a");a.className="badge"+(c.big?" hero2":"");a.href=c.u;a.target="_blank";a.rel="noopener";a.dataset.g=c.g;
+ a.innerHTML='<img referrerpolicy="no-referrer" loading="lazy" alt="'+c.n+' badge" src="https://images.credly.com/images/'+c.i+'"><div class="fb">'+c.n.slice(0,4)+'</div><span>'+c.n+'</span><small>'+c.s+'</small>';
+ var im=a.querySelector("img");im.onerror=function(){im.style.display="none";a.querySelector(".fb").style.display="flex"};
+ wall.appendChild(a)});
+document.querySelectorAll(".tab").forEach(function(t){t.onclick=function(){
+ document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("on")});t.classList.add("on");
+ wall.querySelectorAll(".badge").forEach(function(b){b.style.display=(t.dataset.f=="all"||b.dataset.g==t.dataset.f)?"":"none"})}});
+var cur=null;
+document.querySelectorAll(".chip[data-k]").forEach(function(ch){ch.onclick=function(){
+ var k=ch.dataset.k,same=(cur===k);cur=same?null:k;
+ document.querySelectorAll(".chip[data-k]").forEach(function(x){x.classList.toggle("on",!same&&x.dataset.k===k)});
+ var first=null;document.querySelectorAll("li[data-t]").forEach(function(li){
+  var m=!same&&(" "+li.dataset.t+" ").indexOf(" "+k+" ")>-1;li.classList.toggle("hit",m);li.classList.toggle("dim",!same&&!m);if(m&&!first)first=li});
+ if(first){first.closest("details").open=true;first.scrollIntoView({behavior:"smooth",block:"center"})}}});
+var links=document.querySelectorAll("nav a"),secs=[].map.call(links,function(a){return document.querySelector(a.getAttribute("href"))});
+addEventListener("scroll",function(){var y=scrollY+120,idx=-1;secs.forEach(function(s,i){if(s&&s.offsetTop<=y)idx=i});links.forEach(function(a,i){a.classList.toggle("on",i===idx)})});
+var pf=document.getElementById("pf"),ph=document.querySelector(".photo");
+function setPhoto(u){ph.innerHTML='<img alt="Siddharth Chetan" src="'+u+'"><small class="no-print">Click to change</small>';}
+try{var sv=localStorage.getItem("sc_photo");if(sv)setPhoto(sv)}catch(e){}
+pf.onchange=function(){var f=pf.files[0];if(!f)return;var r=new FileReader();r.onload=function(){setPhoto(r.result);try{localStorage.setItem("sc_photo",r.result)}catch(e){}};r.readAsDataURL(f)};
+
+document.documentElement.classList.add("js");
+(function(){ // reveal on scroll, content visible if observer unsupported
+ var els=document.querySelectorAll(".reveal");
+ if(!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("in")});return}
+ var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.08});
+ els.forEach(function(e){io.observe(e)});setTimeout(function(){els.forEach(function(e){e.classList.add("in")})},2500);
+})();
+(function(){ // network canvas
+ var c=document.getElementById("net");if(!c||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+ var x=c.getContext("2d"),W,H,P=[],N=48;
+ function size(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight}size();addEventListener("resize",size);
+ for(var i=0;i<N;i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,g:Math.random()<.12});
+ (function f(){x.clearRect(0,0,W,H);
+  P.forEach(function(p){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1});
+  for(var i=0;i<N;i++)for(var j=i+1;j<N;j++){var dx=P[i].x-P[j].x,dy=P[i].y-P[j].y,d=Math.sqrt(dx*dx+dy*dy);
+   if(d<130){x.strokeStyle="rgba(143,214,211,"+(1-d/130)*.5+")";x.lineWidth=1;x.beginPath();x.moveTo(P[i].x,P[i].y);x.lineTo(P[j].x,P[j].y);x.stroke()}}
+  P.forEach(function(p){x.fillStyle=p.g?"#E3C27D":"#8FD6D3";x.beginPath();x.arc(p.x,p.y,p.g?3:2,0,7);x.fill()});
+  requestAnimationFrame(f)})();
+})();
+(function(){ // count-up
+ document.querySelectorAll(".stat b").forEach(function(b){var t=b.textContent,m=t.match(/^(\d+)(.*)$/);if(!m||t.indexOf("–")>-1)return;
+  var n=+m[1],suf=m[2],st=null;function step(ts){st=st||ts;var k=Math.min((ts-st)/1100,1);b.textContent=Math.round(n*k)+suf;if(k<1)requestAnimationFrame(step)}requestAnimationFrame(step)})
+})();
+(function(){ // stack detail
+ var D=[
+ {t:"Business applications",p:"I am accountable for the platform that 11 business-critical banking applications run on, including the digital channels and payments-adjacent services.",c:["AIB / AMB","Hello Money","Crypto","Onboarding","BSA / MCE","Teller","Kenya Inhouse Aggregator","eBox / JBPM","Card Tokenization","Falcon","AMOL"]},
+ {t:"Container platform",p:"Architected the move from OpenShift to Alauda Container Platform and run both OpenShift 3 and 4 estates. Gateway API replaced Routes; OpenShift environments were decommissioned.",c:["OpenShift 3 and 4","Alauda ACP","OpenShift Virtualization","OpenShift AI","Gateway API","Kong","Envoy Gateway"]},
+ {t:"Delivery and GitOps",p:"Authored the CI/CD standard for the AR Markets Architecture Forum with 14 mandatory pipeline controls, and made GitOps the delivery model for application teams.",c:["ArgoCD","GitHub Actions","JFrog Artifactory","JFrog Xray","SonarQube"]},
+ {t:"Automation and reliability",p:"An automation specialist throughout my career: Ansible, Terraform and scripting for everything repeatable, with SRE practice and AI-assisted operations on top.",c:["Ansible Automation Platform","Terraform","CloudFormation","Prometheus","ELK 8.x","LLM-assisted operations","HA and DR","Stress testing"]},
+ {t:"Infrastructure and cloud",p:"Data-centre migrations including Absa Towers to Samrand (P2V, P2P, lift and shift), RHEL and CoreOS engineering, and AWS and Azure workloads.",c:["VMware","Huawei HyperFusion","AWS","Azure","RHEL 7 / 8","CoreOS","Red Hat Satellite"]}];
+ var el=document.getElementById("detail");
+ function show(i){var d=D[i];el.innerHTML="<h3>"+d.t+"</h3><p>"+d.p+"</p><div class=chips>"+d.c.map(function(x){return"<span class=chip>"+x+"</span>"}).join("")+"</div>";
+  document.querySelectorAll(".layer").forEach(function(b,j){b.classList.toggle("on",j==i)})}
+ document.querySelectorAll(".layer").forEach(function(b){b.onclick=function(){show(+b.dataset.i)};b.onmouseenter=function(){show(+b.dataset.i)}});show(0);
+})();
+document.querySelectorAll(".tn").forEach(function(n){n.onclick=function(){var r=document.getElementById(n.dataset.go);if(r){r.open=true;r.scrollIntoView({behavior:"smooth",block:"start"})}}});
+document.querySelectorAll(".badge").forEach(function(b){b.addEventListener("mousemove",function(e){var r=b.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;b.style.transform="perspective(600px) rotateY("+x*14+"deg) rotateX("+-y*14+"deg) translateY(-3px)"});b.addEventListener("mouseleave",function(){b.style.transform=""})});
+(function(){var t=new Image();t.onload=function(){setPhoto("photo.jpg")};t.src="photo.jpg"})();
+</script></body></html>
